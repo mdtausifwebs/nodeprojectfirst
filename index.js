@@ -12,11 +12,11 @@ app.use(cors());
 app.use("/api", userRouters);
 app.use("/api", productRoutes);
 
-
 app.listen(process.env.PORT, () => {
   try {
     dbs();
-    console.log(`server is running on http//localhost:${process.env.PORT}`);
+    console.log(`server is running on http://localhost:${process.env.PORT}`);
+
   } catch (err) {
     console.log(`server error ${err}`);
   }
