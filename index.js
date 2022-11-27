@@ -13,11 +13,7 @@ app.use(cors());
 app.use("/api", userRouters);
 app.use("/api", productRoutes);
 app.use("/api", userdata);
-
-
-
 app.listen(process.env.PORT, () => {
-  
   try {
     dbs();
     console.log(`server is running on http://localhost:${process.env.PORT}`);
