@@ -19,6 +19,6 @@ app.listen(process.env.PORT, () => {
     dbs();
     console.log(`server is running on http://localhost:${process.env.PORT}`);
   } catch (err) {
-    console.log(`server error ${err}`);
+    console.log(`server is running error ${err}`);
   }
 });
