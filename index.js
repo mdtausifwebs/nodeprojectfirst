@@ -8,12 +8,11 @@ const productRoutes = require("./src/Product/Routes/ProductRoute");
 const userdata = require("./src/Formdata/Router");
 const app = express();
 app.use(express.json());
-// app.use(bodyParser.json());
+app.use(bodyParser.json());
 app.use(cors());
 app.use("/api", userRouters);
 app.use("/api", productRoutes);
 app.use("/api", userdata);
-
 
 app.listen(process.env.PORT, () => {
   try {
