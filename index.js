@@ -14,7 +14,7 @@ app.use("/api", userRouters);
 app.use("/api", productRoutes);
 app.use("/api", userdata);
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT||5000, () => {
   try {
     dbs();
     console.log(`server is running on http://localhost:${process.env.PORT}`);
